@@ -8,6 +8,17 @@ document.addEventListener('DOMContentLoaded', function() {
 		navigation: {
 			nextEl: '.showcase-navigation__next',
 			prevEl: '.showcase-navigation__prev'
+		},
+		breakpoints: {
+			320: {
+				allowTouchMove: true
+			},
+			768: {
+				allowTouchMove: true
+			},
+			1025: {
+				allowTouchMove: false
+			}
 		}
 	})
 
