@@ -1,5 +1,3 @@
-import gsap from 'gsap/dist/gsap'
-import gsap from 'gsap'
 document.addEventListener('DOMContentLoaded', function() {
 	TweenMax.staggerFrom(
 		".titles > div",
@@ -33,6 +31,17 @@ document.addEventListener('DOMContentLoaded', function() {
 		0.16
 	);
 	TweenMax.staggerTo(
+		".preload",
+		4,
+		{
+			opacity: 0,
+			delay: 7,
+			ease: Expo.easeInOut,
+		},
+		0.2
+	);
+
+	TweenMax.staggerTo(
 		"li",
 		2.6,
 		{
@@ -52,14 +61,14 @@ document.addEventListener('DOMContentLoaded', function() {
 			prevEl: '.showcase-navigation__prev'
 		},
 		breakpoints: {
-			320: {
+			480: {
 				allowTouchMove: true
 			},
 			768: {
 				allowTouchMove: true
 			},
 			1025: {
-				allowTouchMove: false
+				allowTouchMove: true
 			}
 		}
 	})

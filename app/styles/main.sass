@@ -249,7 +249,7 @@ body, html
 .showcase-navigation > *::before
 	content: '?'
 	font-family: assassin-st
-	opacity: 0
+	opacity: 0.7
 	transition: opacity .75s ease-out
 	position: absolute
 	transform: rotate(-90deg)
@@ -311,6 +311,8 @@ body, html
 @media all and (max-width: 1024px)
 	.showcase-navigation
 		pointer-events: none
+	.showcase-navigation > *::before
+		opacity: 0
 
 .blobs-container 
 	display: flex
@@ -402,6 +404,7 @@ body, html
 	overflow: hidden
 	z-index: 9999999
 	pointer-events: none
+	background: #000
 	.titles 
 		position: absolute
 		top: 50%
@@ -469,6 +472,10 @@ body, html
 	.block-6 
 		width: 2.8%
 		background: #fa04f9
+@media all and (max-width: 1024px)
+	.preload h1
+		font-size: gem(80)
 
-
-	
+@media all and (max-width: 480px)
+	.preload h1
+		font-size: gem(40) 
