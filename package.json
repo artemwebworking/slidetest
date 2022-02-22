@@ -38,6 +38,7 @@
 		"webpack-stream": "^7.0.0"
 	},
 	"dependencies": {
+		"gsap": "^3.9.1",
 		"npm-check-updates": "^11.8.5"
 	}
 }
